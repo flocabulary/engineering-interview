@@ -1,0 +1,70 @@
+.logo {
+    max-height: 100px;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Poiret One', cursive;
+    margin: 5px 0 0 15px;
+}
+
+body {
+  background: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+#content {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.urlContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.urlContainer form {
+    flex: 0;
+    margin: 15px;
+    max-width: 30%;
+}
+
+.urlContainer table {
+    flex: 1;
+    align-content: center;
+    margin: 15px;
+    width: 70%;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p, ul {
+  margin: 15px 0;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+table, th, td {
+   border: 1px solid black;
+}

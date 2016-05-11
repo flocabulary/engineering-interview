@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flocabulary Coding Challenge - URL Shortener</title>
+    <link rel="stylesheet" href="{% static 'url_front/styles/base.css' %}" />
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.16/browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  </head>
+  <header>
+      <img class="logo" src="{% static 'url_front/images/sunglasses.svg' %}">
+      <h1>Get Url Shorty</h1>
+  </header>
+  <body>
+      <div id="content"></div>
+      <script>
+       var API_URL = "{% url 'url_rest:url-list' %}";
+      </script>
+      <script type="text/babel" src="{% static 'url_front/scripts/url_react.js' %}"></script>
+  </body>
+  <footer>
+      A URL Shortener by <a href="http://www.github.com/dvndrsn/">Dave A.</a>.
+  </footer>
+</html>

@@ -1,0 +1,11 @@
+# compiled classes
+__pycache__/
+.py[cop]
+
+# collected files
+staticfiles/
+
+# dev configuration
+.env
+setup.sh
+*.#*

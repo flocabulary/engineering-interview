@@ -22,22 +22,24 @@ __Application frontend__
 
 View results in react tables, add results in form through REST API.
 
-http://127.0.0.1:8000/
+https://get-url-shorty.herokuapp.com/
 
 __Direct Link to Short URL__
 
 View or share a link directly. This will forward you to the site mapped to this short URL.
 
-http://127.0.0.1:8000/k
+https://get-url-shorty.herokuapp.com/<short-url>
+
+ex. http://127.0.0.1:8000/k
 
 _API Endpoints_
 
-Use the graphical navigation built in to these endpoints from Django REST Framework or, use the same endpoints with curl or httpie.
+Use the graphical navigation built in to these endpoints from Django REST Framework or, use the same endpoints with curl or httpie. These endpoints use ID (from the Postgres database) rather than short URL for reference.
 
-_API Root_ http://127.0.0.1:8000/api/
-_URL List_ http://127.0.0.1:8000/api/url/
-_URL Detail_ http://127.0.0.1:8000/api/url/9/
-_Go to URL_ http://127.0.0.1:8000/api/url/9/go/
+_API Root_ https://get-url-shorty.herokuapp.com/api/
+_URL List_ https://get-url-shorty.herokuapp.com/api/url/
+_URL Detail_ https://get-url-shorty.herokuapp.com/api/url/<id>/
+_Go to URL_ http://127.0.0.1:8000/api/url/<id>/go/
 
 ## Future Improvements
 - Authentication (integration with social login)
